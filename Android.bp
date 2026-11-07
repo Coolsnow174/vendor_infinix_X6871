@@ -1,0 +1,33 @@
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+# We need to match the vendor partition size of the stock XOS 16.3 build so that
+# the OTA updater does not need to resize any dynamic partition group.
+BOARD_VENDORIMAGE_SIZE := 9515858688
+
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_VENDORIMAGE_FILESYSTEM_USER_SPACE_COMPRESSION := true
+BOARD_VENDORIMAGE_FILESYSTEM_USER_SPACE_COMPRESSION_ALGORITHM := lz4
+BOARD_VENDORIMAGE_FILESYSTEM_USER_SPACE_COMPRESSION_LEVEL := 7
+
+include $(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE)_makefs.sh
+include $(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE)_mkimg.sh
+
+.PHONY: $(INSTALLED_VENDORIMAGE_TARGET)
+
+$(INSTALLED_VENDORIMAGE_TARGET): $(INSTALLED_VENDORIMAGE_TARGET_RAW)
+	$(hide) $(call fs_validate_image)
+	#$(hide) cp $< $@
+	$(hide) $(call build_image)
+	$(hide) $(call verity_image)
+	$(hide) $(call replace_verity_metadata)
+	$(hide) $(avbtool) add_hash_footer_image --image $@ \
+		--partition_size $(BOARD_VENDORIMAGE_PARTITION_SIZE) \
+		--partition_name vendor --algorithm $(BOARD_AVB_ALGORITHM) \
+		--key_path $(BOARD_AVB_VENDOR_KEY_PATH)
+	$(hide) $(call add_vbmeta_signature)

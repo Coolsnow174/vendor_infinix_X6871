@@ -1,0 +1,10 @@
+# Build artifacts
+*.o
+*.a
+*.ko
+
+# Editors
+*.swp
+*~
+.idea/
+.vscode/
