@@ -1,0 +1,7 @@
+#SPD: add for MemoryFusion2.2 by dongyun.liu at 20240930 start
+on property:persist.odm.tr_memfusion.zram_bdev_add_once=0.5
+    swapon_all /vendor/etc/vconfig/memfusion2/fstab.enableswap_wb
+
+on property:persist.odm.tr_memfusion.zram_bdev_add_once=1
+    swapon_all /vendor/etc/vconfig/memfusion2/fstab.enableswap_wb
+#SPD: add for MemoryFusion2.2 by dongyun.liu at 20240930 end

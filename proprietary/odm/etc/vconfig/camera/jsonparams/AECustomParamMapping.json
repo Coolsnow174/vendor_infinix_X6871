@@ -1,0 +1,15 @@
+{
+    "defaultParamID": 0,
+    "mappings": [
+        {
+            "sensorID": 6870,
+            "sensormodeMappings": [],
+            "paramID": 1
+        },
+        {
+            "sensorID": 13025,
+            "sensormodeMappings": [],
+            "paramID": 2
+        }
+    ]
+}

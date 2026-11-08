@@ -1,0 +1,11 @@
+#Add for FILE_VER Permission by ziming.zhang1 start 20260318
+on post-fs-data
+    chmod 0664 /mnt/vendor/nvdata/APCFG/APRDCL/FILE_VER
+    chown root system /mnt/vendor/nvdata/APCFG/APRDCL/FILE_VER
+#Add for FILE_VER Permission by ziming.zhang1 end 20260318
+
+service nvram_daemon /vendor/bin/nvram_daemon
+    class core
+    user root
+    group system radio wifi audio bluetooth media
+    oneshot

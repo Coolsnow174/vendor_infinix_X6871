@@ -1,0 +1,4 @@
+service aidltranstorage /vendor/bin/hw/vendor.aidlstorage@1.0-service
+     class core
+     user system
+     group system

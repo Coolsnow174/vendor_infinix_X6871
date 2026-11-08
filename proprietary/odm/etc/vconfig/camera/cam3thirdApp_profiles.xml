@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<!--
+    Description : TranCamThirdAppProfiles for power saving
+    Author      : bingfeng.li@transsion.com
+-->
+
+<TranCamThirdAppProfiles>
+		<!-- Beauty Cam App  use 16:9 setting -->
+        <Package name="com.linecorp.b612.android"
+            sub_sensor_mode="XML_TranCamSensorMode_VIDEO"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_VIDEO"
+            main_sensor_mode="XML_TranCamSensorMode_VIDEO"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="0"
+            videoCallMaxHeight="0"
+            />
+
+
+		<!-- Top1 video call    com.whatsapp  -->
+        <Package name="com.whatsapp"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="1280"
+            videoCallMaxHeight="720"
+            />
+		<!-- Top2 video call    Messenger -->
+        <Package name="com.facebook.orca"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="640"
+            videoCallMaxHeight="480"
+            />
+		<!-- Top3 video call  Snapchat -->
+        <Package name="com.snapchat.android"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="1024"
+            videoCallMaxHeight="1024"
+            />
+		<!-- Top4 video call   Meet  -->
+        <Package name="com.google.android.apps.tachyon"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="640"
+            videoCallMaxHeight="480"
+            />
+		<!-- Top5 video call   Truecaller -->
+        <Package name="com.mediatek.ims"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="640"
+            videoCallMaxHeight="480"
+            />
+		<!-- Top6 video call   WhatsApp Business  -->
+        <Package name="com.whatsapp.w4b"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="1280"
+            videoCallMaxHeight="720"
+            />
+		<!-- Top7 video call    Zoom  -->
+        <Package name="us.zoom.videomeetings"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="640"
+            videoCallMaxHeight="480"
+            />
+		<!-- Top8 video call   gbwhatsapp  -->
+        <Package name="com.gbwhatsapp"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="1280"
+            videoCallMaxHeight="720"
+            />
+		<!-- Top9 video call   imo-International Calls & Chat  -->
+        <Package name="com.imo.android.imoim"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="640"
+            videoCallMaxHeight="480"
+            />
+		<!-- Top10 video call   Messenger Lite  -->
+        <Package name="com.facebook.mlite"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="640"
+            videoCallMaxHeight="480"
+            />
+		<!-- Top11 video call   Discord  -->
+        <Package name="com.discord"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="1280"
+            videoCallMaxHeight="720"
+            />
+		<!-- Top12 video call   Instagram  -->
+        <Package name="com.instagram.android"
+            sub_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_pdaf_off_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            main_sensor_mode="XML_TranCamSensorMode_PREVIEW"
+            sub_max_fps="15"
+            sub_high_temp_max_fps="15"
+            main_max_fps="20"
+            sub_af_support="0"
+            sub_pdaf_support="0"
+            AIAWB_support="0"
+            videoCallMaxWidth="1440"
+            videoCallMaxHeight="1080"
+            />
+
+</TranCamThirdAppProfiles>

@@ -1,0 +1,9 @@
+{
+  "featureConfig": {
+    "tranfac.sensor.fingerprint.optical": ""
+  },
+  "featureForce": {
+  },
+  "featureExclude": {
+  }
+}

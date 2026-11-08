@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules filename="frequency rules" version="1">
+    <frequency name="BINDER_TARGET_HUNG" window="60" unit="seconds" enabled="true">
+        <description>Binder Target Hung frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="BINDER_LOADING_EXCEEDED" window="180" unit="seconds" enabled="true">
+        <description>Binder Loading Exceeded</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="APP_LAG_LISTEN" window="180" unit="seconds" enabled="true">
+        <description>APP lag listen frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="SYS_LOOPER_HUNG" window="60" unit="seconds" enabled="true">
+        <description>System Looper Hung frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="MEM_LEAK_DETECTOR" window="60" unit="seconds" enabled="true">
+        <description>MEM_LEAK_DETECTOR frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="gpuMem" window="60" unit="seconds" enabled="true">
+        <description>gpuMem frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="APP_LOOPER_HUNG" window="180" unit="seconds" enabled="true">
+        <description>App Looper Hung frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="HUNG_TASK_IO_WAIT" window="180" unit="seconds" enabled="true">
+        <description>HUNG_TASK_IO_WAIT frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="HUNG_TASK_NO_IO_WAIT" window="180" unit="seconds" enabled="true">
+        <description>HUNG_TASK_NO_IO_WAIT frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="CPU_HUNG" window="5" unit="seconds" enabled="true">
+        <description>CPU_HUNG frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="POWER_LONG_PRESS" window="3" unit="seconds" enabled="true">
+        <description>POWER_LONG_PRESS frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="PANIC_KEY" window="3" unit="seconds" enabled="true">
+        <description>Panic Key frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="INPUT_READER" window="180" unit="seconds" enabled="true">
+        <description>Input Reader frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="INPUT_DISPATCHER" window="180" unit="seconds" enabled="true">
+        <description>Input Dispatcher frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="SF_COMPOSITE" window="180" unit="seconds" enabled="true">
+        <description>SF Composite frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="HWC_FENCE_HUNG" window="180" unit="seconds" enabled="true">
+        <description>HWC Fence Hung frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="TP_HUNG" window="180" unit="seconds" enabled="true">
+        <description>TP Hung frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="BLACK_FRAME" window="180" unit="seconds" enabled="true">
+        <description>Black Frame frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="LCD_DRIV" window="180" unit="seconds" enabled="true">
+        <description>LCD Driver frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="FD_Leak" window="180" unit="seconds" enabled="true">
+        <description>FD Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="usageleak" window="180" unit="seconds" enabled="true">
+        <description>Usage Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="UFS_DRIVER_EXCEPTION" window="180" unit="seconds" enabled="true">
+        <description>UFS Driver Exception frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="PendingIntentRecord_Leak" window="180" unit="seconds" enabled="true">
+        <description>PendingIntentRecord Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="NOTIFICATION_OVERLOAD" window="180" unit="seconds" enabled="true">
+        <description>Notification Overload frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="AppOps_Leak" window="180" unit="seconds" enabled="true">
+        <description>AppOps Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="Jobs_Leak" window="180" unit="seconds" enabled="true">
+        <description>Jobs Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="Alarm_Leak" window="180" unit="seconds" enabled="true">
+        <description>Alarm Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="ACTIVITY_WINDOWS_LEAK" window="180" unit="seconds" enabled="true">
+        <description>Activity Windows Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="RUNNING_TASK_LEAK" window="180" unit="seconds" enabled="true">
+        <description>Running Task Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="SYSTEM_ANR" window="180" unit="seconds" enabled="true">
+        <description>System ANR frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="APPWIDGET_LEAK" window="180" unit="seconds" enabled="true">
+        <description>AppWidget Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="INPUTDISPATCHER_ERROR" window="180" unit="seconds" enabled="true">
+        <description>Input Dispatcher Error frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="PWK_Timeout" window="180" unit="seconds" enabled="true">
+        <description>Power Key Timeout frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="Broadcast_Rate_Overload" window="180" unit="seconds" enabled="true">
+        <description>Broadcast Rate Overload frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="Broadcast_Receiver_Leak" window="180" unit="seconds" enabled="true">
+        <description>Broadcast Receiver Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="Broadcast_Record_Leak" window="180" unit="seconds" enabled="true">
+        <description>Broadcast Record Leak frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="memLeakSilentReboot" window="180" unit="seconds" enabled="true">
+        <description>Memory Leak Silent Reboot frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="MEMORY_LEAK_REBOOT_LISTEN" window="180" unit="seconds" enabled="true">
+        <description>Memory Leak Reboot listen frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+    <frequency name="BACKGROUND_MEM_DETECT_EVENT" window="15" unit="seconds" enabled="true">
+        <description>background mem detect event frequency limit</description>
+        <action>abandon</action>
+        <threshold>1</threshold>
+    </frequency>
+</rules>

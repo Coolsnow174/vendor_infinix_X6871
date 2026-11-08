@@ -1,0 +1,12 @@
+# ScreenInfo HAL service
+
+on property:sys.boot_completed=1
+    start vendor.screeninfo
+    setprop vendor.screeninfo.service.started true
+
+service vendor.screeninfo /vendor/bin/hw/vendor.transsion.hardware.screeninfo-service
+    class main
+    user system
+    group system
+    disabled
+

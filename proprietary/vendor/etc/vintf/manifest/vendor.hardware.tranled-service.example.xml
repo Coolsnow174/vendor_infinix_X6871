@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/hardware/interfaces/tranled/aidl/default/vendor.hardware.tranled-service.example.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.hardware.tranled</name>
+        <fqname>ITranLed/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,14 @@
+on post-fs
+     mkdir /mnt/vendor/persist/verify_key_files 0700 system system
+     chmod 0777 /mnt/vendor/persist/verify_key_files
+     chmod 0777 /mnt/vendor/persist/verify_key_files/auFile.dat
+     mkdir /tranfs/verify_key_files 0700 system system
+     chmod 0777 /tranfs/verify_key_files
+     chmod 0777 /tranfs/verify_key_files/auFile.dat
+     chmod 0777 /tranfs/verify_key_files/log.txt
+
+
+service keyfilesvfy_service /vendor/bin/hw/vendor.transsion.hardware.security.keyfilesvfy@1.0-service
+     class hal
+     user root
+     group root system

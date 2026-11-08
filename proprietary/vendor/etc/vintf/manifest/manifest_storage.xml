@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/vendor_modules/common/transtorage/aidl/default/manifest_storage.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.transtorage.storage</name>
+        <fqname>IAidlStorage/default</fqname>
+    </hal>
+</manifest>

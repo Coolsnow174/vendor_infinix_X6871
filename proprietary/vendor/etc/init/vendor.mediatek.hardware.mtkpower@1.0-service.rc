@@ -1,0 +1,7 @@
+service vendor.mtkpower-service.mediatek /vendor/bin/hw/vendor.mediatek.hardware.mtkpower-service.mediatek
+    class hal
+    capabilities NET_ADMIN
+    user root
+    group system readproc wifi media media_rw camera audio
+    interface aidl android.hardware.power.IPower/default
+    interface aidl vendor.mediatek.hardware.mtkpower.IMtkPowerService/default

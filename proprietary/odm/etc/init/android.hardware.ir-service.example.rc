@@ -1,0 +1,15 @@
+
+#TR: change irtx form hidl to aidl by xiaosongwang at 20240520 start
+service android.hardware.ir-service.example /odm/bin/hw/android.hardware.ir-service.example
+    interface aidl android.hardware.ir.IConsumerIr/default
+    class hal
+    user system
+    group system
+
+on boot
+    chmod 666 /dev/lirc0
+    chown system system /dev/lirc0
+
+    chmod 666 /dev/irtx
+    chown system system /dev/irtx
+#TR: change irtx form hidl to aidl by xiaosongwang at 20240520 end

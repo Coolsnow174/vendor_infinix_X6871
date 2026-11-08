@@ -1,0 +1,8 @@
+on property:ro.vendor.cam_transerver_support=true
+    start vendor.trancamserver-aidl
+
+service vendor.trancamserver-aidl /vendor/bin/hw/trancamserver
+    class hal
+    user system
+    group system
+    disabled

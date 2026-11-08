@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules filename="Judge rules" version="1">
+    <rule id="1" dimension="1" triggereventname="BINDER_TARGET_HUNG">
+        <result code="0xffffff32" desc="Binder Target Hung"/>
+    </rule>
+    <rule id="2" dimension="1" triggereventname="SYS_LOOPER_HUNG">
+        <result code="0xffffff2c" desc="System Looper Hung"/>
+    </rule>
+    <rule id="3" dimension="1" triggereventname="APP_LOOPER_HUNG">
+        <result code="0xffffff3c" desc="App Looper Hung"/>
+    </rule>
+    <!--rule id="4" dimension="1" triggereventname="CPU_HUNG">
+        <result code="0xffffff33" desc="CPU Hung"/>
+    </rule>-->
+    <rule id="5" dimension="1" triggereventname="HUNG_TASK_IO_WAIT">
+        <result code="0xffffff34" desc="Hung Task IO Wait"/>
+    </rule>
+    <rule id="6" dimension="1" triggereventname="HUNG_TASK_NO_IO_WAIT">
+        <result code="0xffffff35" desc="Hung Task No IO Wait"/>
+    </rule>
+    <rule id="7" dimension="1" triggereventname="TP_HUNG">
+        <result code="0xffffff50" desc="TP Hung"/>
+    </rule>
+    <rule id="8" dimension="1" triggereventname="BLACK_FRAME">
+        <result code="0xffffff2d" desc="Black Frame"/>
+    </rule>
+    <rule id="9" dimension="1" triggereventname="LCD_DRIV">
+        <result code="0xffffff36" desc="LCD Driver"/>
+    </rule>
+    <rule id="10" dimension="1" triggereventname="BINDER_LOADING_EXCEEDED">
+        <result code="0xffffff75" desc="Binder Loading Exceeded"/>
+    </rule>
+    <rule id="11" dimension="1" triggereventname="usageleak">
+        <result code="" desc="Usage Leak"/>
+    </rule>
+    <rule id="12" dimension="1" triggereventname="UFS_DRIVER_EXCEPTION">
+        <result code="0xffffff28" desc="UFS Driver Exception"/>
+    </rule>
+    <rule id="13" dimension="1" triggereventname="PWK_Timeout">
+        <result code="0xffffff3d" desc="Power Key Timeout"/>
+    </rule>
+    <rule id="14" dimension="1" triggereventname="SYSTEM_ANR">
+        <result code="0xffffff19" desc="System ANR"/>
+    </rule>
+    <rule id="15" dimension="1" triggereventname="INPUTDISPATCHER_ERROR">
+        <result code="0xffffff1a" desc="Input Dispatcher Error"/>
+    </rule>
+    <rule id="30" dimension="2" triggereventname="PANIC_KEY">
+        <event relatedevent="INPUT_READER" window="40000" unit="millisecond">
+            <result code="0xffffff4e" desc="Panic Key input reader hung"/>
+        </event>
+        <event relatedevent="INPUT_DISPATCHER" window="40000" unit="millisecond">
+            <result code="0xffffff4e" desc="Panic Key input dispatcher hung"/>
+        </event>
+        <event relatedevent="SF_COMPOSITE" window="30000" unit="millisecond">
+            <result code="0xffffff3e" desc="SF Composite  hung"/>
+        </event>
+        <event relatedevent="HWC_FENCE_HUNG" window="50000" unit="millisecond">
+            <result code="0xffffff2b" desc="HWC Fence hung"/>
+        </event>
+        <event relatedevent="FD_Leak" window="50000" unit="millisecond">
+            <result code="0xffffff62" desc="FD Leak"/>
+        </event>
+        <event relatedevent="RUNNING_TASK_LEAK" window="50000" unit="millisecond">
+            <result code="0xffffff11" desc="Running Task Leak"/>
+        </event>
+        <event relatedevent="ACTIVITY_WINDOWS_LEAK" window="50000" unit="millisecond">
+            <result code="0xffffff18" desc="Activity Windows Leak"/>
+        </event>
+        <event relatedevent="Broadcast_Rate_Overload" window="50000" unit="millisecond">
+            <result code="0xffffff1b" desc="Broadcast Rate Overload"/>
+        </event>
+        <event relatedevent="Broadcast_Receiver_Leak" window="50000" unit="millisecond">
+            <result code="0xffffff1c" desc="Broadcast Receiver Leak"/>
+        </event>
+        <event relatedevent="Broadcast_Record_Leak" window="50000" unit="millisecond">
+            <result code="0xffffff1d" desc="Broadcast Record Leak"/>
+        </event>
+        <event relatedevent="NOTIFICATION_OVERLOAD" window="50000" unit="millisecond">
+            <result code="0xffffff1f" desc="Notification Overload"/>
+        </event>
+        <event relatedevent="Jobs_Leak" window="50000" unit="millisecond">
+            <result code="0xffffff20" desc="Jobs Leak"/>
+        </event>
+        <event relatedevent="Alarm_Leak" window="50000" unit="millisecond">
+            <result code="0xffffff65" desc="Alarm Leak"/>
+        </event>
+        <event relatedevent="AppOps_Leak" window="50000" unit="millisecond">
+            <result code="0xffffff66" desc="AppOps Leak"/>
+        </event>
+        <event relatedevent="APPWIDGET_LEAK" window="50000" unit="millisecond">
+            <result code="" desc="App Widget Leak"/>
+        </event>
+    </rule>
+    <rule id="31" dimension="2" triggereventname="POWER_LONG_PRESS">
+        <event relatedevent="INPUT_READER" window="40000" unit="millisecond">
+            <result code="0xffffff4f" desc="Power Long Press input reader hung"/>
+        </event>
+        <event relatedevent="INPUT_DISPATCHER" window="40000" unit="millisecond">
+            <result code="0xffffff4f" desc="Power Long Press input dispatcher hung"/>
+        </event>
+    </rule>
+    <rule id="32" dimension="2" triggereventname="INPUT_DISPATCHER">
+        <event relatedevent="PANIC_KEY" window="40000" unit="millisecond">
+            <result code="0xffffff4e" desc="Panic Key input dispatcher hung"/>
+        </event>
+        <event relatedevent="POWER_LONG_PRESS" window="40000" unit="millisecond">
+            <result code="0xffffff4f" desc="Power Long Press input dispatcher hung"/>
+        </event>
+    </rule>
+    <rule id="33" dimension="2" triggereventname="INPUT_READER">
+        <event relatedevent="PANIC_KEY" window="40000" unit="millisecond">
+            <result code="0xffffff4e" desc="Panic Key input reader hung"/>
+        </event>
+        <event relatedevent="POWER_LONG_PRESS" window="40000" unit="millisecond">
+            <result code="0xffffff4f" desc="Power Long Press input reader hung"/>
+        </event>
+    </rule>
+    <rule id="34" dimension="2" triggereventname="SF_COMPOSITE">
+        <event relatedevent="PANIC_KEY" window="30000" unit="millisecond">
+            <result code="0xffffff3e" desc="SF Composite hung"/>
+        </event>
+    </rule>
+    <rule id="35" dimension="2" triggereventname="HWC_FENCE_HUNG">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff2b" desc="HWC Fence hung"/>
+        </event>
+    </rule>
+    <rule id="36" dimension="2" triggereventname="FD_Leak">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff62" desc="FD Leak"/>
+        </event>
+    </rule>
+    <rule id="37" dimension="2" triggereventname="RUNNING_TASK_LEAK">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff11" desc="Running Task Leak"/>
+        </event>
+    </rule>
+    <rule id="38" dimension="2" triggereventname="ACTIVITY_WINDOWS_LEAK">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff18" desc="Activity Windows Leak"/>
+        </event>
+    </rule>
+    <rule id="39" dimension="2" triggereventname="Broadcast_Rate_Overload">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff1b" desc="Broadcast Rate Overload"/>
+        </event>
+        <event relatedevent="Broadcast_Record_Leak" window="50000" unit="millisecond">
+            <result code="0xffffff1d" desc="Broadcast Record Leak"/>
+        </event>
+    </rule>
+    <rule id="40" dimension="2" triggereventname="Broadcast_Receiver_Leak">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff1c" desc="Broadcast Receiver Leak"/>
+        </event>
+    </rule>
+    <rule id="41" dimension="2" triggereventname="Broadcast_Record_Leak">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff1d" desc="Broadcast Record Leak"/>
+        </event>
+        <event relatedevent="Broadcast_Rate_Overload" window="50000" unit="millisecond">
+            <result code="0xffffff1b" desc="Broadcast Rate Overload"/>
+        </event>
+    </rule>
+    <rule id="42" dimension="2" triggereventname="NOTIFICATION_OVERLOAD">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff1f" desc="Notification Overload"/>
+        </event>
+    </rule>
+    <rule id="43" dimension="2" triggereventname="Jobs_Leak">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff20" desc="Jobs Leak"/>
+        </event>
+    </rule>
+    <rule id="44" dimension="2" triggereventname="Alarm_Leak">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff65" desc="Alarm Leak"/>
+        </event>
+    </rule>
+    <rule id="45" dimension="2" triggereventname="AppOps_Leak">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="0xffffff66" desc="AppOps Leak"/>
+        </event>
+    </rule>
+    <rule id="46" dimension="2" triggereventname="APPWIDGET_LEAK">
+        <event relatedevent="PANIC_KEY" window="50000" unit="millisecond">
+            <result code="" desc="App Widget Leak"/>
+        </event>
+    </rule>
+</rules>

@@ -1,0 +1,12 @@
+on post-fs-data
+    mkdir /data/vendor/tranlighting 0755 system system
+    restorecon -R /data/vendor/tranlighting
+
+    mkdir /data/vendor/tranlighting/custom 0777 system system
+    restorecon -R /data/vendor/tranlighting/custom
+
+service vendor.hardware.tranled-service /vendor/bin/hw/vendor.hardware.tranled-service
+        interface aidl vendor.hardware.tranled.ITranLed/default
+        class hal
+        user system
+        group system

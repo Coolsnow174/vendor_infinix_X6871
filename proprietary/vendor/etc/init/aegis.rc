@@ -1,0 +1,8 @@
+service aegis /vendor/bin/hw/aegis
+    class core
+    user root
+    group root system
+    onrestart write /dev/kmsg "aegis service restarted"
+
+on property:ro.vendor.tran.stability.aegis.support=1
+    start aegis

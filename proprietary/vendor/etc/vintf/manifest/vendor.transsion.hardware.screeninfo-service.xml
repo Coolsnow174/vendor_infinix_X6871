@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/vendor_modules/common/screen_info/default/vendor.transsion.hardware.screeninfo-service.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.screeninfo</name>
+        <fqname>IScreenInfo/default</fqname>
+    </hal>
+</manifest>

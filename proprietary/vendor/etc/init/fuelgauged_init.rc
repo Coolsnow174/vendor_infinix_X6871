@@ -1,0 +1,10 @@
+#USD:modify for third battery x6851 20260330 start
+service fuelgauged /vendor/bin/fuelgauged
+    class core
+    user system
+    group system
+    disabled
+
+on boot && property:ro.vendor.fuelgauged.disable=0
+    start fuelgauged
+#USD:modify for third battery x6851 20260330 end

@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/vendor_modules/tranfac/TranfacVnd/TranfacAidl/service/vendor.transsion.hardware.tranfacaidl-service.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.tranfacaidl</name>
+        <fqname>ITranfacAidl/default</fqname>
+    </hal>
+</manifest>

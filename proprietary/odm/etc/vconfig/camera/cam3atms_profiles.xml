@@ -1,0 +1,227 @@
+<?xml version="1.0" ?>
+<!--
+    Description : Package for tuning custom parameters
+    Author      : wei.miao@transsion.com
+-->
+
+<TranCamAtmsProfiles>
+        <!--transsion camera-->
+        <!--Cam Mode-->
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_ShortVideo"
+            eApp="App_ShortVideo"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_FaceBeauty"
+            eApp="App_FaceBeauty"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_FilmVideo"
+            eApp="App_FilmVideo"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_Panorama"
+            eApp="App_Panorama"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_TimeLapse"
+            eApp="App_TimeLapse"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_Documents"
+            eApp="App_Documents"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_Professional"
+            eApp="App_Professional"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_Video"
+            eApp="App_Video"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_UltraHD"
+            eApp="App_TranCustom0"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_Portrait"
+            eApp="App_Portrait"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_MagicSky"
+            eApp="App_MagicSky"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_SuperMacro"
+            eApp="App_SuperMacro"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_DualVideo"
+            eApp="App_DualVideo"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_SlowMotion"
+            eApp="App_SlowMotion"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_ScreenFlash"
+            eApp="App_ScreenFlash"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_MacroControl"
+            eApp="App_MacroControl"
+            />
+
+        <!--3PartyMode, some special mode-->
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_360VideoHDR"
+            eApp="App_360VideoHDR"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_AntiVideo"
+            eApp="App_AntiVideo"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_1080pVideoSuperNight"
+            eApp="App_1080pVideoSuperNight"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_4kVideoSuperNight"
+            eApp="App_4kVideoSuperNight"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_PortraitBokeh"
+            eApp="App_PortraitBokeh"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_PortraitBeauty"
+            eApp="App_PortraitBeauty"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_VideoFilter"
+            eApp="App_VideoFilter"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_VideoMakeup"
+            eApp="App_VideoMakeup"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_AutoFPS"
+            eApp="App_AutoFPS"
+            />
+
+        <Package name="com.transsion.camera"
+            featureName="TranCamMode_EXT_AntiAutoFPS"
+            eApp="App_AntiAutoFPS"
+            />
+
+        <!--3rd apk-->
+        <Package name="com.zhiliaoapp.musically.go"
+            featureName="TranCamMode_EXT_360VideoHDR"
+            eApp="App_360VideoHDR"
+            />
+
+        <Package name="com.transsion.camkitdemo"
+            featureName="TranCamMode_EXT_360VideoHDR"
+            eApp="App_360VideoHDR"
+            />
+
+        <Package name="com.facebook.orca"
+            featureName="TranCamMode_EXT_360VideoHDR"
+            eApp="App_360VideoHDR"
+            />
+
+        <Package name="com.snapchat.android"
+            featureName="TranCamMode_EXT_360VideoHDR"
+            eApp="App_360VideoHDR"
+            />
+
+        <Package name="com.whatsapp"
+            featureName="TranCamMode_EXT_360VideoHDR"
+            eApp="App_360VideoHDR"
+            />
+
+        <Package name="us.zoom.videomeetings"
+            featureName="TranCamMode_EXT_360VideoHDR"
+            eApp="App_360VideoHDR"
+            />
+
+        <Package name="com.transsion.camkitdemo"
+            featureName="ETranCamMode_EXT_CamkitVideo"
+            eApp="App_CamkitDeafult"
+            />
+
+        <Package name="com.facebook.orca"
+            featureName="ETranCamMode_EXT_CamkitVideo"
+            eApp="App_CamkitDeafult"
+            />
+
+        <Package name="com.snapchat.android"
+            featureName="ETranCamMode_EXT_CamkitVideo"
+            eApp="App_CamkitDeafult"
+            />
+
+        <Package name="com.whatsapp"
+            featureName="ETranCamMode_EXT_CamkitVideo"
+            eApp="App_CamkitDeafult"
+            />
+
+        <Package name="us.zoom.videomeetings"
+            featureName="ETranCamMode_EXT_CamkitVideo"
+            eApp="App_CamkitDeafult"
+            />
+
+        <Package name="com.transsion.camkitdemo"
+            featureName="ETranCamMode_EXT_CamkitNightYUV"
+            eApp="App_CamkitNightYUV"
+            />
+
+        <Package name="com.facebook.orca"
+            featureName="ETranCamMode_EXT_CamkitNightYUV"
+            eApp="App_CamkitNightYUV"
+            />
+
+        <Package name="com.snapchat.android"
+            featureName="ETranCamMode_EXT_CamkitNightYUV"
+            eApp="App_CamkitNightYUV"
+            />
+
+        <Package name="com.whatsapp"
+            featureName="ETranCamMode_EXT_CamkitNightYUV"
+            eApp="App_CamkitNightYUV"
+            />
+
+        <Package name="us.zoom.videomeetings"
+            featureName="ETranCamMode_EXT_CamkitNightYUV"
+            eApp="App_CamkitNightYUV"
+            />
+
+        <Package name="com.android.cts.verifier"
+            featureName="TranCamMode_UnKown"
+            eApp="App_CTSCamera"
+            />
+
+</TranCamAtmsProfiles>

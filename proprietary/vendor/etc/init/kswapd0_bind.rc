@@ -1,0 +1,19 @@
+service tasksetStart_sh /vendor/bin/init.tasksetStart.sh
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:persist.odm.tr_powerhal.kswapd0_bind.feature.support=1
+    start tasksetStart_sh
+
+service tasksetEnd_sh /vendor/bin/init.tasksetEnd.sh
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:persist.odm.tr_powerhal.kswapd0_bind.feature.support=0
+    start tasksetEnd_sh

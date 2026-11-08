@@ -1,0 +1,12 @@
+service nfc_hal_service.st.aidl /vendor/bin/hw/android.hardware.nfc-service-st
+    class hal
+    user nfc
+    group nfc
+    #NFBD: add st21nfc driver for X6851-W by gang.an 20260228 start
+    # AIDL interfaces
+    #interface aidl android.hardware.nfc.INfc/default
+    # don't auto restart
+    #oneshot
+    #NFBD: add st21nfc driver for X6851-W by gang.an 20260228 end
+    # start only when requested
+    disabled

@@ -1,0 +1,9 @@
+service vendor.fingerprint-default /vendor/bin/hw/android.hardware.biometrics.fingerprint-service default
+    class late_start
+    user system
+    group system input
+    interface aidl android.hardware.biometrics.fingerprint.IFingerprint/default
+
+on post-fs-data
+    mkdir /data/vendor/fingerprint/ 0771 system system
+    mkdir /mnt/vendor/persist/fingerprint 0771 system system

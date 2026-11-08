@@ -1,0 +1,50 @@
+service vendor.tranradionet /vendor/bin/hw/tranradionet
+    #interface aidl vendor.transsion.hardware.trannet.ITranNet/default
+    class hal
+    user system
+    group system radio misc net_admin net_raw sdcard_r sdcard_rw
+    capabilities NET_ADMIN NET_RAW
+    oneshot
+    disabled
+
+on property:init.svc.zygote=restarting && property:init.svc.vendor.tranradionet=running
+    stop vendor.tranradionet
+
+on property:init.svc.zygote=stopped && property:init.svc.vendor.tranradionet=running
+    stop vendor.tranradionet
+
+on property:init.svc.zygote=running && property:init.svc.vendor.ril-daemon-mtk=running
+    start vendor.tranradionet
+
+on property:init.svc.zygote=running && property:init.svc.vendor.ril-daemon=running
+    start vendor.tranradionet
+
+on property:vendor.tranradionet.restart=1
+    restart vendor.tranradionet
+
+service vendor.tranradionet1 /vendor/bin/hw/tranradionet
+    class main
+    user system
+    group system radio cache inet misc audio log readproc wakelock oem_2901 oem_2912 net_admin net_raw
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+    disabled
+
+service vendor.tranradionet2 /vendor/bin/hw/tranradionet -c 2
+    class main
+    user system
+    group system radio cache inet misc audio log readproc wakelock oem_2901 oem_2912 net_admin net_raw
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+    disabled
+
+on property:persist.radio.multisim.config=ssss && property:ro.hardware=qcom
+    stop vendor.tranradionet1
+    stop vendor.tranradionet2
+    start vendor.tranradionet1
+
+on property:persist.radio.multisim.config=dsds && property:ro.hardware=qcom
+    stop vendor.tranradionet1
+    stop vendor.tranradionet2
+    start vendor.tranradionet1
+    start vendor.tranradionet2
+
+

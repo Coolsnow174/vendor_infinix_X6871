@@ -1,0 +1,49 @@
+{
+	"flashlight_id": [
+		{
+			"type":1,
+			"ct":1,
+			"part":1,
+			"name":"ocp81375_v4l2-led1",
+			"channel":0,
+			"decouple":0
+		},
+		{
+			"type":2,
+			"ct":1,
+			"part":2,
+			"name":"sgm37864_v4l2-led1",
+			"channel":0,
+			"decouple":0
+		}
+	],
+	"safetyThreholdFront":6,
+	"safetyThreholdRear":10,
+	"custDuty": [3,4,3,3,3,0,0,9],
+	"strobeMap": [
+		{
+			"strobeTypeId": 1,
+			"strobe1Type": 1,
+			"strobe2Type": 0
+		},
+		{
+			"strobeTypeId": 2,
+			"strobe1Type": 1,
+			"strobe2Type": 0
+		}
+	],
+	"customOpenStrobe": 1,
+	"specialLightPreduty": 4,
+	"slideValue": [
+		{
+			"strobeTypeId": 1,
+			"strobe1Range": [120,230],
+			"strobe2Range": [120,230]
+		},
+		{
+			"strobeTypeId": 2,
+			"strobe1Range": [120,230],
+			"strobe2Range": [120,230]
+		}
+	]
+}

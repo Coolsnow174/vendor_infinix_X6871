@@ -1,0 +1,24 @@
+{
+    "iso_thresholdMap":[
+        {
+            "sensorid":0,
+            "miso_threshold0":90,
+            "miso_threshold1":-1
+        },
+        {
+            "sensorid":1,
+            "miso_threshold0":30,
+            "miso_threshold1":-1
+        },
+        {
+            "sensorid":2,
+            "miso_threshold0":100,
+            "miso_threshold1":-1
+        },
+        {
+            "sensorid":3,
+            "miso_threshold0":70,
+            "miso_threshold1":-1
+        }
+    ]
+}

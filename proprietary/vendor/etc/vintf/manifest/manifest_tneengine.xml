@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/system_modules/stability/vendortne/1.0/manifest_tneengine.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.tne.tneengine</name>
+        <fqname>ITne/default</fqname>
+    </hal>
+</manifest>

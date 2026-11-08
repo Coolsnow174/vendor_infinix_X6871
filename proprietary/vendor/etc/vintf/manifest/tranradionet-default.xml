@@ -1,0 +1,16 @@
+<!--
+    Input:
+        vendor/transsion/vendor_modules/tran_tsn/TranRadioNetDaemon/common/tranradionet-default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.trannet</name>
+        <version>5</version>
+        <fqname>ITranNet/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.tranradio</name>
+        <version>11</version>
+        <fqname>ITranRadio/default</fqname>
+    </hal>
+</manifest>

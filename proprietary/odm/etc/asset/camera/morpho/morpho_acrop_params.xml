@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf8"?>
+<VideoStabilizer>
+    <!--
+        max           : "最大裁切范围"
+        min           : "最小裁切范围"
+    -->
+    <AdaptiveCrop>
+        <camera value="0">
+            <max               type="double"   default="1.0"      >1.0</max>
+            <min               type="double"   default="0.67"     >0.75</min>
+        </camera>
+        <camera value="1">
+            <max               type="double"   default="1.0"      >1.0</max>
+            <min               type="double"   default="0.67"     >0.9</min>
+        </camera>
+        <camera value="2">
+            <max               type="double"   default="1.0"      >1.0</max>
+            <min               type="double"   default="0.67"     >0.75</min>
+        </camera>
+        <camera value="3">
+            <max               type="double"   default="1.0"      >1.0</max>
+            <min               type="double"   default="0.67"     >0.75</min>
+        </camera>
+    </AdaptiveCrop>
+
+    <UltrazoomEIS>
+
+        <ultrazoom_thd              type="double"   default="20"    >100.0</ultrazoom_thd>
+
+        <zoom_ratio value="0.5">
+            <is_fixed_num_frame     type="int"      default="16"    >1000</is_fixed_num_frame>
+            <is_fixed_th_low        type="double"   default="0.0080">0</is_fixed_th_low>
+            <is_fixed_th_high       type="double"   default="0.0320">0</is_fixed_th_high>
+            <is_shaking_num_frame   type="int"      default="32"    >32</is_shaking_num_frame>
+            <is_shaking_th          type="double"   default="0.0300">100</is_shaking_th>
+            <barrier_scale_z        type="double"   default="0.1000">0.1</barrier_scale_z>
+            <barrier_fix_scale      type="double"   default="0.1200">0.12</barrier_fix_scale>
+            <barrier_fix_offset     type="double"   default="1.0000">1</barrier_fix_offset>
+            <barrier_fix_power      type="double"   default="2.0000">2.0</barrier_fix_power>
+            <barrier_follow_scale   type="double"   default="0.1200">0.18</barrier_follow_scale>
+            <barrier_follow_offset  type="double"   default="0.0000">0</barrier_follow_offset>
+            <barrier_follow_power   type="double"   default="2.0000">2.0</barrier_follow_power>
+            <barrier_shake_scale    type="double"   default="1.2000">1.2</barrier_shake_scale>
+            <barrier_shake_offset   type="double"   default="0.0000">0</barrier_shake_offset>
+            <barrier_shake_power    type="double"   default="2.0000">2.0</barrier_shake_power>
+            <coeff_trans_to_fix     type="double"   default="0.1000">0.1</coeff_trans_to_fix>
+            <coeff_trans_to_follow  type="double"   default="0.1000">0.1</coeff_trans_to_follow>
+            <coeff_trans_to_shake   type="double"   default="0.1000">0.1</coeff_trans_to_shake>
+            <coeff_averaging        type="double"   default="0.5000">1.0</coeff_averaging>
+            <coeff_stab_roll_fix    type="double"   default="0.0625">0.0625</coeff_stab_roll_fix>
+        </zoom_ratio>
+    </UltrazoomEIS>
+
+</VideoStabilizer>

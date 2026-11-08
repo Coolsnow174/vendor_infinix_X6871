@@ -1,0 +1,10 @@
+service vendor.hardware.trantp-service /vendor/bin/hw/vendor.hardware.trantp-service
+        interface aidl vendor.hardware.trantp.ITrantp/default
+        class hal
+        user system
+        group system
+
+on property:vendor.all.modules.ready=1
+    chown system system /dev/tppolldrv
+    chown system system /sys/devices/platform/hot-area/special_area
+    chmod 0660 /sys/devices/platform/hot-area/special_area

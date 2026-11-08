@@ -1,0 +1,27 @@
+{
+    "tran_sensors": [
+        {
+            "type": "als_ml",
+            "parameters": {
+                "screentype": "UnderScreen",
+                "vendortype": "SensorTek",
+                "algotype": "Cutout",
+                "version": "1.0"
+            }
+        },
+        {
+            "type": "als_common",
+            "parameters": {
+                "readnv_version": 3
+            }
+        },
+        {
+            "type": "sample_type",
+            "parameters": {
+                "double_params": 0.1,
+                "integer_params": 10,
+                "string_params": "sample_code"
+            }
+        }
+    ]
+}

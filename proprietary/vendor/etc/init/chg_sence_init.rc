@@ -1,0 +1,7 @@
+service chg_sence /vendor/bin/chg_sence
+    class main
+    user system
+    group system
+
+on property:persist.vendor.tran.battery=true
+    setprop ro.vendor.tran.batauthen true

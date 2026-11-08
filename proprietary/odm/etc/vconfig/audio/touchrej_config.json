@@ -1,0 +1,52 @@
+{
+    "Platform": "X6871",
+    "Version": "0.0.1",
+
+    "Alpha": 0.8,
+    "StartFreq": 21000,
+    "EndFreq": 23000,
+    "CrossCorrThre": 0.3,
+    "StatePeaks": 50,
+    "QuitThres": 0.35,
+    "Gains": {
+
+        "Channel_1": -2,
+        "Channel_2": -22
+    },
+
+    "TouchThresholds": {
+
+        "Touch_thr_1": 0.04,
+        "Touch_thr_2": 0.5
+    },
+
+    "EnergyMax": {
+
+        "Energy_max_1": 1.5,
+        "Energy_max_2": 1.5
+    },
+
+    "EnergyInit": {
+
+        "Energy_init_1": 0.1,
+        "Energy_init_2": 0.5
+    },
+
+    "OptimizedParams": {
+
+        "EnergyRatioThreshold": 4.0,
+        "EnergyRatioQuitThreshold": 2.0,
+
+        "EnterCountThreshold": 12,
+        "ExitCountThreshold": 15,
+
+        "VarianceThreshold": 0.08,
+        "VarianceBufferSize": 30,
+
+        "ScoreThreshold": 0.61,
+        "ScoreQuitThreshold": 0.45,
+
+        "UseSoftBottomConstraint": true
+    }
+
+}

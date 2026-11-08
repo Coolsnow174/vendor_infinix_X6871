@@ -1,0 +1,16 @@
+{
+  "featureConfig": {
+    "tranfac.sensor.accelerometer.horizontal": "",
+    "tranfac.sensor.gyroscope.horizontal": "",
+    "tranfac.usb.charge.rfc": "",
+    "tranfac.audio.speaker.num": "2",
+    "tranfac.audio.mic.num": "2",
+    "tranfac.sensor.proximity.ultrasound": "",
+    "tranfac.sensor.light_main": "UnderScreen|SensorTek|Cutout|V1_0_0",
+    "tranfac.usb.charge.reverse_c2c": "",
+    "tranfac.usb.charge.reverse": "10",
+    "tranfac.camera.dual.arcsoft": "",
+    "tranfac.camera.dummy.front": "",
+    "tranfac.connect.gps": ""
+  }
+}

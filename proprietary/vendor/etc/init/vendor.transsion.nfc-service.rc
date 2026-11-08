@@ -1,0 +1,5 @@
+service vendor.tran_nfc_hal_launcher /vendor/bin/hw/vendor.transsion.nfc-service
+    class hal
+    user nfc
+    group nfc drmrpc system
+    oneshot

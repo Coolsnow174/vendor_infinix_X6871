@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules filename="Subscription rules" version="1">
+    <subscribers>
+        <subscriber name="APP_LAG_LISTEN" >
+            <rule name="BINDER_LOADING_EXCEEDED" triggereventname="BINDER_LOADING_EXCEEDED" dimension="1"/>
+            <rule name="INPUTDISPATCHER_ERROR" triggereventname="INPUTDISPATCHER_ERROR" dimension="1"/>
+            <rule name="PANIC_KEY" dimension="2">
+                <relatedevent name="FD_Leak" triggereventname="FD_Leak" window="50" unit="seconds"/>
+                <relatedevent name="RUNNING_TASK_LEAK" triggereventname="RUNNING_TASK_LEAK" window="50" unit="seconds"/>
+                <relatedevent name="ACTIVITY_WINDOWS_LEAK" triggereventname="ACTIVITY_WINDOWS_LEAK" window="50" unit="seconds"/>
+                <relatedevent name="Broadcast_Rate_Overload" triggereventname="Broadcast_Rate_Overload" window="50" unit="seconds"/>
+                <relatedevent name="Broadcast_Receiver_Leak" triggereventname="Broadcast_Receiver_Leak" window="50" unit="seconds"/>
+                <relatedevent name="Broadcast_Record_Leak" triggereventname="Broadcast_Record_Leak" window="50" unit="seconds"/>
+                <relatedevent name="NOTIFICATION_OVERLOAD" triggereventname="NOTIFICATION_OVERLOAD" window="50" unit="seconds"/>
+            </rule>
+            <rule name="FD_Leak" dimension="2">
+                <relatedevent name="PANIC_KEY" triggereventname="FD_Leak" window="50" unit="seconds"/>
+            </rule>
+            <rule name="RUNNING_TASK_LEAK" dimension="2">
+                <relatedevent name="PANIC_KEY" triggereventname="RUNNING_TASK_LEAK" window="50" unit="seconds"/>
+            </rule>
+            <rule name="ACTIVITY_WINDOWS_LEAK" dimension="2">
+                <relatedevent name="PANIC_KEY" triggereventname="ACTIVITY_WINDOWS_LEAK" window="50" unit="seconds"/>
+            </rule>
+            <rule name="Broadcast_Rate_Overload" dimension="2">
+                <relatedevent name="PANIC_KEY" triggereventname="Broadcast_Rate_Overload" window="50" unit="seconds"/>
+                <relatedevent name="Broadcast_Record_Leak" triggereventname="Broadcast_Record_Leak" window="50" unit="seconds"/>
+            </rule>
+            <rule name="Broadcast_Receiver_Leak" dimension="2">
+                <relatedevent name="PANIC_KEY" triggereventname="Broadcast_Receiver_Leak" window="50" unit="seconds"/>
+            </rule>
+            <rule name="Broadcast_Record_Leak" dimension="2">
+                <relatedevent name="PANIC_KEY" triggereventname="Broadcast_Record_Leak" window="50" unit="seconds"/>
+                <relatedevent name="Broadcast_Rate_Overload" triggereventname="Broadcast_Rate_Overload" window="50" unit="seconds"/>
+            </rule>
+            <rule name="NOTIFICATION_OVERLOAD" dimension="2">
+                <relatedevent name="PANIC_KEY" triggereventname="NOTIFICATION_OVERLOAD" window="50" unit="seconds"/>
+            </rule>
+            <!-- 更多event元素 -->
+        </subscriber>
+        <subscriber name="MEM_LEAK_DETECTOR" >
+            <rule name="gpuMem" triggereventname="gpuMem" dimension="1"/>
+            <rule name="BACKGROUND_MEM_DETECT_EVENT" triggereventname="BACKGROUND_MEM_DETECT_EVENT" dimension="1"/>
+        </subscriber>
+        <subscriber name="MEMORY_LEAK_REBOOT_LISTEN" >
+            <rule name="memLeakSilentReboot" triggereventname="memLeakSilentReboot" dimension="1"/>
+        </subscriber>
+        <!-- 更多subscriber元素 -->
+    </subscribers>
+</rules>

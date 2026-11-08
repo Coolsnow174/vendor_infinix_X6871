@@ -1,0 +1,53 @@
+<PowerHalConfig>
+    <version value="20260311"/>
+        <action id="40000" by_pid="0">
+	    <data cmd="0x03000000" param1="13"></data>
+            <data cmd="0x02808000" param1="1"></data>
+            <data cmd="0x02804000" param1="1"></data>
+            <data cmd="0x02810000" param1="1"></data>
+            <data cmd="0x0280c500" param1="1"></data>
+            <data cmd="0x0280c400" param1="1"></data>
+             <!--PERF_RES_FPS_FBT_QR_T2WNT_X -->
+            <data cmd="0x02004700" param1="1"></data>
+            <data cmd="0x02080100" param1="1"></data>
+            <data cmd="0x0203cb00" param1="1"></data>
+            <data cmd="0x0206cf00" param1="2"></data>
+            <data cmd="0x0203dd00" param1="1"></data>
+            <data cmd="0x03018000" param1="15"></data>
+            <data cmd="0x03018300" param1="1000"></data>
+            <data cmd="0x10002100" param1="319418519"></data>
+        </action>
+        <action id="40001" by_pid="0">
+            <data cmd="0x03000000" param1="13"></data>
+            <data cmd="0x02808000" param1="1"></data>
+            <data cmd="0x02804000" param1="1"></data>
+            <data cmd="0x02810000" param1="1"></data>
+            <!--PERF_RES_FPS_FBT_LIMIT_CFREQ_M -->
+            <data cmd="0x02064200" param1="2200000"></data>
+            <!--PERF_RES_FPS_FBT_LIMIT_RFREQ_M -->
+            <data cmd="0x02064300" param1="2500000"></data>
+            <!--PERF_RES_FPS_FBT_HEAVY_NUM_BY_PID-->
+            <data cmd="0x0203da00" param1="4"></data>
+        </action>
+        <action id="40002" by_pid="0">
+	    <data cmd="0x0205c400" param1="4"></data>
+            <!--PERF_RES_FPS_FBT_LIMIT_CFREQ_M -->
+            <data cmd="0x02064200" param1="2300000"></data>
+            <!--PERF_RES_FPS_FBT_LIMIT_RFREQ_M -->
+            <data cmd="0x02064300" param1="2600000"></data>
+            <!--PERF_RES_FPS_FBT_HEAVY_NUM_BY_PID-->
+            <data cmd="0x0203da00" param1="3"></data>
+        </action>
+        <action id="40003" by_pid="0">
+            <!--PERF_RES_CPUFREQ_MAX_CLUSTER_0-->
+            <data cmd="0x00404000" param1="1900000"></data>
+            <!--PERF_RES_CPUFREQ_MAX_CLUSTER_1-->
+            <data cmd="0x00404100" param1="2100000"></data>
+        </action>
+        <action id="40004" by_pid="0">
+            <!--PERF_RES_CPUFREQ_MAX_CLUSTER_0-->
+            <data cmd="0x00404000" param1="1800000"></data>
+            <!--PERF_RES_CPUFREQ_MAX_CLUSTER_1-->
+            <data cmd="0x00404100" param1="2000000"></data>
+        </action>
+</PowerHalConfig>

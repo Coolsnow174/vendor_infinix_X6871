@@ -1,0 +1,71 @@
+{
+    "Platform": "CM5",
+    "Version": "1.0.9",
+    "RecordAGC": {
+        "Gain": {
+            "record": {
+                "hand": 23,
+                "head": 23
+            },
+            "video": {
+                "hand": 24,
+                "head": 24
+            }
+        },
+        "PreMultiplyGain": {
+            "record": {
+                "hand": 2.2,
+                "head": 2.2
+            },
+            "video": {
+                "hand": 2.0,
+                "head": 2.0
+            }
+        }
+    },
+    "RecordNS": {
+        "GlobalBypass": false,
+        "NoiseSuppressionMultiplyLevel": {
+            "record": {
+                "hand": 0.3,
+                "head": 0.3
+            },
+            "video": {
+                "hand": 0.3,
+                "head": 0.3
+            }
+        },
+        "PreMultiplyGain": {
+            "record": {
+                "hand": 1.01,
+                "head": 1.01
+            },
+            "video": {
+                "hand": 1.01,
+                "head": 1.01
+            }
+        },
+        "PostMultiplyGain": {
+            "record": {
+                "hand": [
+                    0.13,
+                    0.13
+                ],
+                "head": [
+                    0.17,
+                    0.17
+                ]
+            },
+            "video": {
+                "hand": [
+                    0.2,
+                    0.2
+                ],
+                "head": [
+                    0.2,
+                    0.2
+                ]
+            }
+        }
+    }
+}

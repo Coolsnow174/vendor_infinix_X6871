@@ -1,0 +1,9 @@
+on post-fs-data
+    write /proc/bootprof "INIT:tran_healthinfo_upload--start"
+    start tran_healthinfo_upload
+
+service tran_healthinfo_upload /vendor/bin/tran_healthinfo_upload
+    user root
+    group root system
+    oneshot
+    disabled

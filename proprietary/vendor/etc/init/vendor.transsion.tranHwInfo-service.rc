@@ -1,0 +1,4 @@
+service vendor.transsion.tranHwInfo-service /vendor/bin/hw/vendor.transsion.tranHwInfo-service
+    class early_hal
+    user system
+    group system radio

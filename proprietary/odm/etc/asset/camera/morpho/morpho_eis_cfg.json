@@ -1,0 +1,66 @@
+{
+    "staticinfo_1_Default": {
+        "mPreTpipMode": 1,
+        "mIsNeedWarp":1,
+        "mQueueCount": 8,
+        "mMargin":25,
+        "mGridWidth":32,
+        "mGridHeight":24,
+        "mCurrEisMode":3
+    },
+
+    "staticinfo_2_WIDE": {
+        "mPreTpipMode": 1,
+        "mIsNeedWarp":1,
+        "mQueueCount": 30,
+        "mMargin":43,
+        "mGridWidth":32,
+        "mGridHeight":24,
+        "mCurrEisMode":2
+    },
+
+    "staticinfo_2_ULTRAWIDE": {
+        "mPreTpipMode": 1,
+        "mIsNeedWarp":1,
+        "mQueueCount": 30,
+        "mMargin":67,
+        "mGridWidth":32,
+        "mGridHeight":24,
+        "mCurrEisMode":2
+    },
+
+    "staticinfo_2_FRONT": {
+        "mPreTpipMode": 1,
+        "mIsNeedWarp":1,
+        "mQueueCount": 30,
+        "mMargin":25,
+        "mGridWidth":32,
+        "mGridHeight":24,
+        "mCurrEisMode":2
+    },
+
+    "staticinfo_2_TELE": {
+        "mPreTpipMode": 1,
+        "mIsNeedWarp":1,
+        "mQueueCount": 30,
+        "mMargin":25,
+        "mGridWidth":32,
+        "mGridHeight":24,
+        "mCurrEisMode":2
+    },
+
+    "staticinfo_3_Default": {
+        "mPreTpipMode": 1,
+        "mIsNeedWarp":1,
+        "mQueueCount": 30,
+        "mMargin":25,
+        "mGridWidth":32,
+        "mGridHeight":24,
+        "mCurrEisMode":3
+    },
+
+
+    "0x0_0": {
+        "mSatBaseZoom":0.6
+    }
+}

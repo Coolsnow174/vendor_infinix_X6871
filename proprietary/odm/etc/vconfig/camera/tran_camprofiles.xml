@@ -1,0 +1,157 @@
+<?xml version="1.0" ?>
+<!--
+    Description : Package for thirdpart apk size & fpsrange
+                  EvictedPackage for Evicted Camera, stillname > comingname
+    Author      : wei.miao@transsion.com
+-->
+
+<TranITDCamProfiles>
+<!--
+    Package
+      API1：
+        arg1: name:  app package name
+        arg2: supportedPreviewSizes: Supported preview sizes
+        arg3: supportedVideoSizes: Supported video sizes
+        arg4: supportedPictureSizes: Supported picture sizes
+        arg5: fpsRange: fps range
+-->
+<!--API1 Begin-->
+        <!--tapstudio.photoremove.unwanted.object-->
+        <Package name="tapstudio.photoremove.unwanted.object"
+            supportedPreviewSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="3840x2160,1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,320x240,176x144"
+            fpsRange=""
+            />
+
+        <!--com.camera12.iphone12-->
+        <Package name="com.camera12.iphone12"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240,176x144"
+            fpsRange=""
+            />
+
+        <!--com.cardfeed.video_public-->
+        <Package name="com.cardfeed.video_public"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedPictureSizes="1920x1080,1440x1080,1080x1080"
+            fpsRange=""
+            />
+
+        <!--com.instagram.lite-->
+        <Package name="com.instagram.lite"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240,176x144"
+            fpsRange=""
+            />
+
+        <!--com.shopee.ph-->
+        <Package name="com.shopee.ph"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for X6871H962-5739 support whatsapp HD by zihao.li 20240510 start-->
+        <!--com.whatsap-->
+        <Package name="com.whatsapp"
+            supportedPreviewSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedVideoSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedPictureSizes="2560x1440,1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            fpsRange=""
+            />
+        <!--[ITD] modify for X6871H962-5739 support whatsapp HD by zihao.li 20240510 end-->
+
+        <Package name="com.facebook.lite"
+            supportedPreviewSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+
+        <!--com.flatfish.cal.privacy-->
+        <Package name="com.flatfish.cal.privacy"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            fpsRange=""
+            />
+<!--API1 End-->
+
+<!--
+    Package
+      API2：
+        arg1: name:  app package name
+        arg2: targetAPI="2"
+        arg3: supportedPreviewSizes: Supported preview sizes
+        arg4: supportedVideoSizes: Supported video sizes
+        arg5: supportedPictureSizes: Supported picture sizes
+        arg6: fpsRange: fps range //not use
+-->
+<!--API2 Begin-->
+        <!--com.facebook.katana-->
+        <Package name="com.facebook.katana"
+            targetAPI="2"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+<!--API2 End-->
+
+        <Package name="com.facebook.lite"
+            targetAPI="2"
+            supportedPreviewSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+
+        <Package name="com.newsdistill.mobile"
+            targetAPI="2"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+        <!--[ITD] modify for X6871H962-5739 support whatsapp HD by zihao.li 20240510 start-->
+        <Package name="com.whatsapp"
+            targetAPI="2"
+            supportedPreviewSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="2560x1440,1920x1080,1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+        <!--[ITD] modify for X6871H962-5739 support whatsapp HD by zihao.li 20240510 end-->
+
+        <Package name="com.flatfish.cal.privacy"
+            targetAPI="2"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,320x240"
+            fpsRange=""
+            />
+
+<!--
+    EvictedPackage
+        arg1: comingname:  current app package name
+        arg2: stillname:  still alive app package name
+-->
+        <EvictedPackage comingname="com.tencent.mm" stillname="com.transsion.camera"/>
+<!--
+    FastLaunchPackage
+        arg1: name:  FastLaunch app package name
+-->
+        <FastLaunchPackage name="com.whatsapp"/>
+        <FastLaunchPackage name="com.tencent.mm"/>
+        <FastLaunchPackage name="com.facebook.orca"/>
+        <FastLaunchPackage name="com.zhiliaoapp.musically"/>
+        <FastLaunchPackage name="com.instagram.android"/>
+        <FastLaunchPackage name="com.transsion.faceid"/>
+        <FastLaunchPackage name="com.transsion.settings.wifi"/>
+
+</TranITDCamProfiles>

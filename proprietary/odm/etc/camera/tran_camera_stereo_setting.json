@@ -1,0 +1,109 @@
+{
+    "Sensors": [
+        {
+            "Name": "S5KHM6SX_MIPI_RAW",
+            "Capture Size": {
+                "4:3": [
+                    "3968x2976"
+                ],
+                "9:4": [
+                    "3960x1760"
+                ]
+            },
+            "IMGOYUV Size": {
+                "4:3": "3968x2976",
+                "1:1": "2976x2976",
+				"9:4": "3960x1760"
+            },
+            "RRZOYUV Size": {
+                "4:3": "1440x1080",
+				"1:1": "1080x1080",
+                "9:4": "1584x704"
+            },
+            "SensorScenarioZSD": {
+                "3rdParty": "Custom1",
+                "Zoom": "capture"
+            },
+            "SensorScenarioRecording": {
+                "Zoom": "Video"
+            }
+
+        },
+        {
+            "Name": "GC02M3_MIPI_RAW",
+            "Capture Size": {
+                "4:3": [
+                    "1600x1200"
+                ],
+                "9:4": [
+                    "1584x704"
+                ]
+            },
+            "IMGOYUV Size": {
+                "4:3": "1600x1200",
+                "1:1": "1200x1200",
+                "9:4": "1584x704"
+            },
+            "RRZOYUV Size": {
+                "4:3": "1440x1080",
+                "1:1": "1080x1080",
+                "9:4": "1584x704"
+            },
+            "SensorScenarioZSD": {
+                "3rdParty": "Custom1",
+                "Zoom": "Capture"
+            }
+        }
+    ],
+    "Sensor Combinations": [
+        {
+            "Logical Device": {
+                "Name": "bayermono",
+                "Features": ["3rdParty"]
+            },
+            "Sensors":["S5KHM6SX_MIPI_RAW", "GC02M3_MIPI_RAW"],
+            "Module Type": 1,
+            "Baseline": 0.95,
+            "FOV Crop": {
+                "Disable Crop": 1
+            },
+            "Groups": [
+            {
+                "Zoom Ratio": 1.0,
+                "Sensors Order": [0, 1],
+                "Sensor Offset": [0, 2.08],
+                "Module Variation": 3,
+                "SensorScenarioZSD": ["Custom1", "Custom1"],
+                "SensorScenarioRecording": ["Custom1", "Custom1"]
+            },
+            {
+                "Zoom Ratio": 2.0,
+                "Sensors Order": [0, 1],
+                "Sensor Offset": [0, 2.08],
+                "Module Variation": 3,
+                "Working Range": 20,
+                "SensorScenarioZSD": ["Custom1", "Custom1"],
+                "SensorScenarioRecording": ["Custom1", "Custom1"]
+            }
+            ],
+            "Depthmap Size": {
+                "4:3": "480x360",
+                "16:9": "480x272"
+            },
+            "Depthmap Size Capture": {
+                "1:1": "3072x3072",
+                "4:3": "3968x2976",
+                "16:9": "3328x1872",
+                "9:4": "3072x1368"
+            },
+            "LDC": ["0"]
+        }
+    ],
+    "Depth Delay": 0,
+    "Enable Record": 1,
+    "Callback Buffer List": {
+        "//": ["ci: Clean Image, bi: Bokeh Image, mbd: MTK Bokeh Depth, mdb: MTK Debug Buffer, mbm: MTK Bokeh Metadata",
+            "Value must <= 91 bytes"],
+        "Value": "bi"
+    }
+}

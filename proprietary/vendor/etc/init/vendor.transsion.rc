@@ -1,0 +1,21 @@
+on post-fs-data
+    # add for transsion Fingerprint
+
+    #xiaohong.huang start
+    chmod 0660 /dev/tran_fp
+    chown system root /dev/tran_fp
+    #xiaohong.huang end
+
+    mkdir /data/vendor/fpdump
+    chmod 0777 /data/vendor/fpdump
+    chown system system /data/vendor/fpdump
+
+    #zheyi.bai start
+    mkdir /data/vendor/tran_fp
+    chmod 0777 /data/vendor/tran_fp
+    chown system system /data/vendor/tran_fp
+    #zheyi.bai end
+
+    chmod 0666 /sys/kernel/tran_display/lcm_name
+    chmod 0666 /sys/kernel/tran_display/lcm_hbm_state
+

@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/vendor_modules/vnd_security/rpmb/default/vendor.transsion.hardware.security.rpmbservice@2.0-service.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.security.rpmbservice</name>
+        <fqname>IRpmbservice/default</fqname>
+    </hal>
+</manifest>

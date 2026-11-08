@@ -1,0 +1,7 @@
+on post-fs-data
+    chmod 0666 /dev/tran_led
+    chmod 0666 /dev/tran_led_buff
+    chmod 0664 /sys/led/led/tran_multicolor
+
+on property:sys.transsion.nvcolor=*
+    write /sys/led/led/tran_multicolor ${sys.transsion.nvcolor}

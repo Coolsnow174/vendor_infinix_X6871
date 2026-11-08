@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TuningMap>
+  <SensorsInfo>
+    <SensorInfo>
+      <sensorId>0</sensorId>
+      <sensorName>imx890</sensorName>
+    </SensorInfo>
+    <SensorInfo>
+      <sensorId>1</sensorId>
+      <sensorName>s5kjn1sub</sensorName>
+    </SensorInfo>
+    <SensorInfo>
+      <sensorId>2</sensorId>
+      <sensorName>s5kjn1tele</sensorName>
+    </SensorInfo>
+  </SensorsInfo>
+  <!--
+    PipeMask :
+    MAINPIPE0 = 0x2
+    MAINPIPE1 = 0x4
+    MAINPIPE2 = 0x8
+    LITEPIPE  = 0x10
+    SSPP      = 0x20
+    SNVPIPE   = 0x40
+  -->
+  <TuningMapInfo>
+    <sensorName>imx890</sensorName>
+    <AiIspMode value="1">
+      <SensorIndex>1</SensorIndex>
+    </AiIspMode>
+  </TuningMapInfo>
+
+  <TuningMapInfo>
+    <sensorName>s5kjn1sub</sensorName>
+    <AiIspMode value="1">
+      <SensorIndex>1</SensorIndex>
+    </AiIspMode>
+  </TuningMapInfo>
+
+  <TuningMapInfo>
+    <sensorName>s5kjn1tele</sensorName>
+    <AiIspMode value="1">
+      <SensorIndex>1</SensorIndex>
+    </AiIspMode>
+  </TuningMapInfo>
+</TuningMap>

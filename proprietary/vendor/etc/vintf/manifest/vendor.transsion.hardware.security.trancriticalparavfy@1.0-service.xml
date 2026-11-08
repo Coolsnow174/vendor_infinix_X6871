@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/vendor_modules/vnd_security/trancriticalparavfy/default/vendor.transsion.hardware.security.trancriticalparavfy@1.0-service.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.security.trancriticalparavfy</name>
+        <fqname>ITranCriticalParaVfy/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,26 @@
+{
+    "file_lock_list": [
+
+    ],
+
+    "app_file_lock_list": [
+        {
+            "camera_apk_path":"",
+            "camera_apk_offset": [
+
+            ]
+        },
+        {
+            "camera_odex_path":"",
+            "camera_odex_offset": [
+
+            ]
+        },
+        {
+            "camera_vdex_path":"",
+            "camera_vdex_offset": [
+
+            ]
+        }
+    ]
+}
